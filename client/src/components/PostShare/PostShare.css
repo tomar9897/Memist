@@ -1,0 +1,102 @@
+.PostShare {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--cardColor);
+    padding: 1rem;
+    border-radius: 1rem;
+  
+    @media (max-width: 800px) {
+      /* Adjust styles for mobile view */
+      padding: 0.5rem;
+      border-radius: 2;
+    }
+  }
+  
+  .PostShare > img {
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+  
+    @media (max-width: 768px) {
+      /* Adjust styles for mobile view */
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+  
+  .PostShare > div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+  }
+  
+  .PostShare > div > input {
+    background-color: var(--inputColor);
+    border-radius: 10px;
+    padding: 0.5rem;
+    font-size: 14px;
+    border: none;
+    outline: none;
+  
+    @media (max-width: 768px) {
+      /* Adjust styles for mobile view */
+      font-size: 12px;
+    }
+  }
+  
+  .postOptions {
+    display: flex;
+    align-items: center; /* Align options in one line */
+    gap: 0.5rem;
+  
+    @media (max-width: 768px) {
+      /* Adjust styles for mobile view */
+      justify-content: flex-start;
+      flex-wrap: wrap; /* Wrap options if space is limited */
+    }
+  }
+  
+  .option {
+    padding: 0.3rem 0.5rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+  
+    @media (max-width: 768px) {
+      /* Adjust styles for mobile view */
+      font-size: 10px;
+    }
+  }
+  
+  .ps-button {
+    padding: 0.3rem 1rem;
+    font-size: 12px;
+  
+    @media (max-width: 768px) {
+      /* Adjust styles for mobile view */
+      padding: 0.2rem 0.5rem;
+      font-size: 10px;
+    }
+  }
+  
+  .previewImage {
+    position: relative;
+  }
+  
+  .previewImage > svg {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .previewImage > img {
+    width: 100%;
+    max-height: 20rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+  

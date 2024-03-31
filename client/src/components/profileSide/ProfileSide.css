@@ -1,0 +1,11 @@
+.ProfileSide{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    overflow: auto;
+}
+/* 
+.logo{
+    width: 10px;
+} */

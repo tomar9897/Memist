@@ -1,0 +1,13 @@
+/* PostSide.css */
+.PostSide {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  
+    @media (max-width: 768px) {
+      /* Styles for mobile view */
+      height: auto; /* Remove fixed height */
+      overflow: hidden; /* Remove overflow */
+    }
+  }
+  
